@@ -6,6 +6,7 @@ import api from '~/services/api';
 import { signInSuccess } from './actions';
 
 export function* signIn({ payload }) {
+  console.tron.log('hello');
   const { email, password } = payload;
 
   const response = yield call(api.post, 'sessions', {
@@ -20,10 +21,7 @@ export function* signIn({ payload }) {
     return;
   }
 
-  console.tron.log('hello');
-
   yield put(signInSuccess(token, user));
-  console.tron.log('signinsuccess');
 
   history.push('/dashboard');
 }
