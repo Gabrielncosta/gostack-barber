@@ -24,6 +24,11 @@ export const Content = styled.div`
       border-right: 1px solid #eee;
     }
   }
+
+  aside {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const Profile = styled.div`
