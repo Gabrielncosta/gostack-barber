@@ -70,17 +70,17 @@ export const Notification = styled.div`
 
   time {
     font-size: 12px;
+    display: block;
     opacity: 0.6;
+    margin-bottom: 5px;
   }
 
   button {
-    font-size: 1f2px;
+    font-size: 12px;
     border: 0;
     background: none;
     color: #7159c1;
     color: brightness(80%);
-    margin: 0 5px;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   ${(props) =>
@@ -93,6 +93,7 @@ export const Notification = styled.div`
         height: 8px;
         background: #ff892e;
         border-radius: 50%;
+        margin-left: 10px;
       }
     `}
 `;
